@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-16T12:54:36.300979+00:00",
-  "generated_ts": 1778936076,
+  "generated_at": "2026-05-16T12:59:00.638940+00:00",
+  "generated_ts": 1778936340,
   "total": 400,
   "category_counts": {
-    "politics": 83,
-    "war": 76,
+    "politics": 84,
+    "war": 77,
     "markets": 50,
     "ai": 40,
     "world": 12,
@@ -14,7 +14,7 @@
     "health": 15,
     "india": 18,
     "bollywood": 7,
-    "education": 11,
+    "education": 9,
     "sports": 15,
     "economy": 4,
     "government": 8,
@@ -23,8 +23,8 @@
     "science": 9
   },
   "region_counts": {
-    "india": 211,
-    "intl": 189
+    "india": 210,
+    "intl": 190
   },
   "category_order": [
     "war",
@@ -737,11 +737,6 @@
           "link": "https://www.dw.com/en/taiwan-urges-trump-to-advance-arms-deal-after-china-summit/a-77178649?maca=en-rss-en-all-1573-rdf"
         },
         {
-          "name": "AP Top News",
-          "domain": "news.google.com",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOG1BR1hJeWxkbHZndVlGMUdoODROcXdYRnpJbEl3Z280LWtmLW00UGxmZ2o1ZmtHVFFGeWdBZEJuWjNjd1pjbkxNX21TcXQ3NnQ0bXpaVElGVWo3aXFGU1lNTWlRa2tGV1JTRkZRVGVIM3VsV203QXRYMGFiSjB0NVFGZjF2U2VPNFJJTmhJN2hWdnJXNlhUM015TQ?oc=5"
-        },
-        {
           "name": "BBC World",
           "domain": "bbc.com",
           "link": "https://www.bbc.com/news/articles/ce8p61v7l68o?at_medium=RSS&at_campaign=rss"
@@ -921,48 +916,6 @@
         "treasury"
       ],
       "related_sources": []
-    },
-    {
-      "id": "193002262e88",
-      "title": "Senior IS leader killed in joint operation, US and Nigeria say",
-      "title_hindi": null,
-      "summary": "President Donald Trump said the operation eliminated \"the most active terrorist in the world\", Abu-Bilal al-Minuki.",
-      "link": "https://www.bbc.com/news/articles/cy72p2kpd03o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "source_domain": "bbc.com",
-      "region": "intl",
-      "category": "politics",
-      "published_iso": "2026-05-16T11:44:54+00:00",
-      "published_ts": 1778931894,
-      "has_hindi": false,
-      "priority": 29,
-      "keywords": [
-        "operation",
-        "senior",
-        "leader",
-        "killed",
-        "joint",
-        "nigeria",
-        "president",
-        "donald"
-      ],
-      "anchors": [
-        "nigeria",
-        "senior",
-        "us"
-      ],
-      "related_sources": [
-        {
-          "name": "Al Jazeera",
-          "domain": "aljazeera.com",
-          "link": "https://www.aljazeera.com/news/2026/5/16/trump-says-isil-second-in-command-abu-bilal-al-minuki-killed?traffic_source=rss"
-        },
-        {
-          "name": "Bloomberg via Google",
-          "domain": "news.google.com",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNU0FlSHdoZ25NZ2tzbWZvZmhuS1paelVZTlpCTVpnNjIxX1FCelk3a0Y2R0s4NUVOUV8waU0yTzdMUVBxZGt0VVQtMldHRTZyWTdlX0laRGZSTWMwMmtyMzJ5R1dibWZZZU9yNmtiWUtGZG5QZ3hxMVJtcDJCYUtQMUFmTDdWeVZNc2hpYXo1T3ZEN1pEdDlZRk96NkNCeDladlR3UmF4eU1vQjU3MjFDNA?oc=5"
-        }
-      ]
     },
     {
       "id": "71a97a2dba68",
@@ -1295,8 +1248,8 @@
       "source_domain": "thehindu.com",
       "region": "india",
       "category": "war",
-      "published_iso": "2026-05-16T11:19:02+00:00",
-      "published_ts": 1778930342,
+      "published_iso": "2026-05-16T12:52:26+00:00",
+      "published_ts": 1778935946,
       "has_hindi": false,
       "priority": 27,
       "keywords": [
@@ -1320,14 +1273,14 @@
       ],
       "related_sources": [
         {
+          "name": "Livemint Top",
+          "domain": "livemint.com",
+          "link": "https://www.livemint.com/news/india/rahul-gandhi-urges-pm-modi-to-sack-dharmendra-pradhan-as-education-minister-now-over-neet-ug-2026-paper-leak-11778935861401.html"
+        },
+        {
           "name": "Hindustan Times India",
           "domain": "hindustantimes.com",
           "link": "https://www.hindustantimes.com/india-news/bjp-worker-s-kin-under-lens-in-neet-ug-leak-case-101778925083804.html"
-        },
-        {
-          "name": "Livemint Top",
-          "domain": "livemint.com",
-          "link": "https://www.livemint.com/news/neetug-2026-paper-leak-mastermind-pune-delhi-biology-lecturer-manisha-mandhare-arrested-was-appointed-by-nta-as-expert-11778927286509.html"
         },
         {
           "name": "NDTV Top Stories",
@@ -1472,6 +1425,43 @@
       "related_sources": []
     },
     {
+      "id": "193002262e88",
+      "title": "Senior IS leader killed in joint operation, US and Nigeria say",
+      "title_hindi": null,
+      "summary": "President Donald Trump said the operation eliminated \"the most active terrorist in the world\", Abu-Bilal al-Minuki.",
+      "link": "https://www.bbc.com/news/articles/cy72p2kpd03o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "source_domain": "bbc.com",
+      "region": "intl",
+      "category": "politics",
+      "published_iso": "2026-05-16T11:44:54+00:00",
+      "published_ts": 1778931894,
+      "has_hindi": false,
+      "priority": 26,
+      "keywords": [
+        "operation",
+        "senior",
+        "leader",
+        "killed",
+        "joint",
+        "nigeria",
+        "president",
+        "donald"
+      ],
+      "anchors": [
+        "nigeria",
+        "senior",
+        "us"
+      ],
+      "related_sources": [
+        {
+          "name": "Bloomberg via Google",
+          "domain": "news.google.com",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNU0FlSHdoZ25NZ2tzbWZvZmhuS1paelVZTlpCTVpnNjIxX1FCelk3a0Y2R0s4NUVOUV8waU0yTzdMUVBxZGt0VVQtMldHRTZyWTdlX0laRGZSTWMwMmtyMzJ5R1dibWZZZU9yNmtiWUtGZG5QZ3hxMVJtcDJCYUtQMUFmTDdWeVZNc2hpYXo1T3ZEN1pEdDlZRk96NkNCeDladlR3UmF4eU1vQjU3MjFDNA?oc=5"
+        }
+      ]
+    },
+    {
       "id": "bec242be905b",
       "title": "Trump says Islamic State group leader was killed in a joint U.S.-Nigerian mission",
       "title_hindi": null,
@@ -1506,6 +1496,44 @@
           "name": "Scroll.in",
           "domain": "scroll.in",
           "link": "https://scroll.in/latest/1092905/trump-says-islamic-states-second-in-command-killed-by-us-nigerian-forces?utm_source=rss&utm_medium=public"
+        }
+      ]
+    },
+    {
+      "id": "9fe2026cd286",
+      "title": "Trump says ISIL second-in-command Abu-Bilal al-Minuki killed",
+      "title_hindi": null,
+      "summary": "US and Nigerian forces carry out a joint operation against the commander, who was deemed a 'global terrorist' in 2023.",
+      "link": "https://www.aljazeera.com/news/2026/5/16/trump-says-isil-second-in-command-abu-bilal-al-minuki-killed?traffic_source=rss",
+      "source": "Al Jazeera",
+      "source_domain": "aljazeera.com",
+      "region": "intl",
+      "category": "politics",
+      "published_iso": "2026-05-16T06:16:44+00:00",
+      "published_ts": 1778912204,
+      "has_hindi": false,
+      "priority": 26,
+      "keywords": [
+        "trump",
+        "isil",
+        "second",
+        "command",
+        "bilal",
+        "minuki",
+        "killed",
+        "nigerian"
+      ],
+      "anchors": [
+        "bilal",
+        "isil",
+        "minuki",
+        "trump"
+      ],
+      "related_sources": [
+        {
+          "name": "Livemint Top",
+          "domain": "livemint.com",
+          "link": "https://www.livemint.com/news/us-news/trump-says-isis-second-in-command-abu-bilal-al-minuki-eliminated-he-could-hide-in-africa-but-11778903719566.html"
         }
       ]
     },
@@ -3283,59 +3311,6 @@
       ]
     },
     {
-      "id": "4ccb1a5104d5",
-      "title": "TVK-led Tamil Nadu government: full list of Ministers",
-      "title_hindi": null,
-      "summary": "The specific portfolios for the nine Tamilaga Vettri Kazhagam (TVK) ministers were formally announced on Saturday (May 16, 2026), with Chief Minister C. Joseph Vijay retaining key departments, including the Home and Police.",
-      "link": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-formation-know-the-tvk-ministers-in-c-joseph-vijays-cabinet/article70961530.ece",
-      "source": "The Hindu National",
-      "source_domain": "thehindu.com",
-      "region": "india",
-      "category": "politics",
-      "published_iso": "2026-05-16T12:06:36+00:00",
-      "published_ts": 1778933196,
-      "has_hindi": false,
-      "priority": 17,
-      "keywords": [
-        "ministers",
-        "tamil",
-        "nadu",
-        "government",
-        "full",
-        "list",
-        "specific",
-        "portfolios"
-      ],
-      "anchors": [
-        "ministers",
-        "nadu",
-        "tamil",
-        "tvk"
-      ],
-      "related_sources": [
-        {
-          "name": "Indian Express India",
-          "domain": "indianexpress.com",
-          "link": "https://indianexpress.com/article/india/karti-chidambaram-cm-vijay-aiadmk-mlas-cabinet-warning-10692280/"
-        },
-        {
-          "name": "Times of India Top",
-          "domain": "timesofindia.indiatimes.com",
-          "link": "https://timesofindia.indiatimes.com/india/tamil-nadu-cabinet-10-ministers-allotted-portfolios-cm-vijay-keeps-home-police-public-administration/articleshow/131136228.cms"
-        },
-        {
-          "name": "Hindustan Times India",
-          "domain": "hindustantimes.com",
-          "link": "https://www.hindustantimes.com/india-news/tamil-nadu-cm-vijay-allocates-ministries-see-full-list-101778930294662.html"
-        },
-        {
-          "name": "India Today",
-          "domain": "indiatoday.in",
-          "link": "https://www.indiatoday.in/india/story/tamil-nadu-govt-allocates-portfolios-cm-vijay-keeps-home-ministry-sengottaiyan-gets-finance-2912760-2026-05-16?utm_source=rss"
-        }
-      ]
-    },
-    {
       "id": "e2bffbdd5140",
       "title": "SC halts mining activity in Aravalli until revised definition is finalised as it receives ‘quite disturbing’ feedback",
       "title_hindi": null,
@@ -3946,6 +3921,37 @@
       "related_sources": []
     },
     {
+      "id": "5f23ed097b40",
+      "title": "Steve Kerr agrees to a two-year deal to continue coaching the Warriors, AP source says - AP News",
+      "title_hindi": null,
+      "summary": "Steve Kerr agrees to a two-year deal to continue coaching the Warriors, AP source says AP News",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRjhXR0ZlOE1mYWpHbGk1bW5Icl85bG82b05XLURhT0U4dS1feE5IUVduTHNWLW5QbGE4aHotTTY2OWRnV1NMY01zb0thQkljZzR6WnhzQzY1WThHTkhZaWFLVjlLaGw3MmlhT3Q3ci14Zm1MWlBsTjhTZmVYaFl3ekJXUzVhaEZLVkh3bzYxbnhkdw?oc=5",
+      "source": "AP Top News",
+      "source_domain": "news.google.com",
+      "region": "intl",
+      "category": "war",
+      "published_iso": "2026-05-16T11:50:59+00:00",
+      "published_ts": 1778932259,
+      "has_hindi": false,
+      "priority": 15,
+      "keywords": [
+        "steve",
+        "kerr",
+        "agrees",
+        "deal",
+        "continue",
+        "coaching",
+        "warriors",
+        "source"
+      ],
+      "anchors": [
+        "kerr",
+        "steve",
+        "warriors"
+      ],
+      "related_sources": []
+    },
+    {
       "id": "8147ef2e578a",
       "title": "Virat Kohli Praises WPL's Impact on Indian Women's Cricket, Says Players Now Emerge As \"Ready Products\"",
       "title_hindi": null,
@@ -4405,39 +4411,6 @@
       "anchors": [
         "14",
         "looking"
-      ],
-      "related_sources": []
-    },
-    {
-      "id": "2471306a8354",
-      "title": "Trump says ISIS second in command Abu-Bilal al-Minuki eliminated — ‘He could hide in Africa, but…’",
-      "title_hindi": null,
-      "summary": "The US viewed Al-Mainuki as the key figure in IS organising and finance, and believed he was plotting attacks against America and its interests",
-      "link": "https://www.livemint.com/news/us-news/trump-says-isis-second-in-command-abu-bilal-al-minuki-eliminated-he-could-hide-in-africa-but-11778903719566.html",
-      "source": "Livemint Top",
-      "source_domain": "livemint.com",
-      "region": "india",
-      "category": "politics",
-      "published_iso": "2026-05-16T04:01:35+00:00",
-      "published_ts": 1778904095,
-      "has_hindi": false,
-      "priority": 15,
-      "keywords": [
-        "trump",
-        "isis",
-        "second",
-        "command",
-        "bilal",
-        "minuki",
-        "eliminated",
-        "hide"
-      ],
-      "anchors": [
-        "africa",
-        "bilal",
-        "isis",
-        "minuki",
-        "trump"
       ],
       "related_sources": []
     },
@@ -5492,6 +5465,93 @@
           "name": "The Hindu National",
           "domain": "thehindu.com",
           "link": "https://www.thehindu.com/news/national/cji-surya-kant-clarifies-parasites-remarks-says-pained-over-media-reports/article70986796.ece"
+        }
+      ]
+    },
+    {
+      "id": "bd8d943c8970",
+      "title": "Oxfam was involved in negative campaign against Assam tea industry, violated FCRA: Centre to HC",
+      "title_hindi": null,
+      "summary": "The Union government told the Delhi High Court that the non-governmental organisation was a ‘probable instrument of foreign policy’.",
+      "link": "https://scroll.in/latest/1092910/oxfam-was-involved-in-negative-campaign-against-assam-tea-industry-violated-fcra-centre-to-hc?utm_source=rss&utm_medium=public",
+      "source": "Scroll.in",
+      "source_domain": "scroll.in",
+      "region": "india",
+      "category": "politics",
+      "published_iso": "2026-05-16T12:34:09+00:00",
+      "published_ts": 1778934849,
+      "has_hindi": false,
+      "priority": 14,
+      "keywords": [
+        "oxfam",
+        "involved",
+        "negative",
+        "campaign",
+        "against",
+        "assam",
+        "industry",
+        "violated"
+      ],
+      "anchors": [
+        "assam",
+        "centre",
+        "fcra",
+        "hc",
+        "oxfam"
+      ],
+      "related_sources": [
+        {
+          "name": "Indian Express India",
+          "domain": "indianexpress.com",
+          "link": "https://indianexpress.com/article/india/oxfam-india-activities-are-against-countrys-economic-interest-mha-tells-high-court-10691961/"
+        }
+      ]
+    },
+    {
+      "id": "4ccb1a5104d5",
+      "title": "TVK-led Tamil Nadu government: full list of Ministers",
+      "title_hindi": null,
+      "summary": "The specific portfolios for the nine Tamilaga Vettri Kazhagam (TVK) ministers were formally announced on Saturday (May 16, 2026), with Chief Minister C. Joseph Vijay retaining key departments, including the Home and Police.",
+      "link": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-formation-know-the-tvk-ministers-in-c-joseph-vijays-cabinet/article70961530.ece",
+      "source": "The Hindu National",
+      "source_domain": "thehindu.com",
+      "region": "india",
+      "category": "politics",
+      "published_iso": "2026-05-16T12:06:36+00:00",
+      "published_ts": 1778933196,
+      "has_hindi": false,
+      "priority": 14,
+      "keywords": [
+        "ministers",
+        "tamil",
+        "nadu",
+        "government",
+        "full",
+        "list",
+        "specific",
+        "portfolios"
+      ],
+      "anchors": [
+        "ministers",
+        "nadu",
+        "tamil",
+        "tvk"
+      ],
+      "related_sources": [
+        {
+          "name": "Indian Express India",
+          "domain": "indianexpress.com",
+          "link": "https://indianexpress.com/article/india/karti-chidambaram-cm-vijay-aiadmk-mlas-cabinet-warning-10692280/"
+        },
+        {
+          "name": "Times of India Top",
+          "domain": "timesofindia.indiatimes.com",
+          "link": "https://timesofindia.indiatimes.com/india/tamil-nadu-cabinet-10-ministers-allotted-portfolios-cm-vijay-keeps-home-police-public-administration/articleshow/131136228.cms"
+        },
+        {
+          "name": "Hindustan Times India",
+          "domain": "hindustantimes.com",
+          "link": "https://www.hindustantimes.com/india-news/tamil-nadu-cm-vijay-allocates-ministries-see-full-list-101778930294662.html"
         }
       ]
     },
@@ -8360,6 +8420,39 @@
       "related_sources": []
     },
     {
+      "id": "0c0a0c7ba0d9",
+      "title": "May global fiction: New novels from Booker favourites Douglas Stuart and Elizabeth Strout, and more",
+      "title_hindi": null,
+      "summary": "Also, a science fiction novel chronicling the Arab Spring, and a novel on elderly pregnancy, besides others.",
+      "link": "https://scroll.in/article/1092623/may-global-fiction-new-novels-from-booker-favourites-douglas-stuart-and-elizabeth-strout-and-more?utm_source=rss&utm_medium=public",
+      "source": "Scroll.in",
+      "source_domain": "scroll.in",
+      "region": "india",
+      "category": "india",
+      "published_iso": "2026-05-16T12:00:01+00:00",
+      "published_ts": 1778932801,
+      "has_hindi": false,
+      "priority": 8,
+      "keywords": [
+        "fiction",
+        "novel",
+        "global",
+        "novels",
+        "booker",
+        "favourites",
+        "douglas",
+        "stuart"
+      ],
+      "anchors": [
+        "booker",
+        "douglas",
+        "elizabeth",
+        "strout",
+        "stuart"
+      ],
+      "related_sources": []
+    },
+    {
       "id": "874679d8de4d",
       "title": "The app you need to clean up your computer",
       "title_hindi": null,
@@ -9243,43 +9336,6 @@
       "related_sources": []
     },
     {
-      "id": "c2e4469ac533",
-      "title": "New York Times defends journalist after Israel threatens to sue",
-      "title_hindi": null,
-      "summary": "Israel's prime minister says he has ordered legal action over an article which alleged Israeli security officials raped Palestinian detainees.",
-      "link": "https://www.bbc.com/news/articles/c9wedpk155jo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "source_domain": "bbc.com",
-      "region": "intl",
-      "category": "politics",
-      "published_iso": "2026-05-15T16:30:31+00:00",
-      "published_ts": 1778862631,
-      "has_hindi": false,
-      "priority": 8,
-      "keywords": [
-        "israel",
-        "york",
-        "times",
-        "defends",
-        "journalist",
-        "threatens",
-        "prime",
-        "minister"
-      ],
-      "anchors": [
-        "israel",
-        "times",
-        "york"
-      ],
-      "related_sources": [
-        {
-          "name": "Scroll.in",
-          "domain": "scroll.in",
-          "link": "https://scroll.in/latest/1092874/us-to-drop-fraud-charges-against-gautam-adani-reports-the-new-york-times?utm_source=rss&utm_medium=public"
-        }
-      ]
-    },
-    {
       "id": "c1470fb1aaab",
       "title": "I'm a passionate lad and I love it at Everton - Pickford",
       "title_hindi": null,
@@ -9342,6 +9398,42 @@
         "sail"
       ],
       "related_sources": []
+    },
+    {
+      "id": "1e1d2a5df446",
+      "title": "Apple-OpenAI Alliance Frays - Bloomberg.com",
+      "title_hindi": null,
+      "summary": "Apple-OpenAI Alliance Frays Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRWhlblBhTkx5TWFFeEhTMjRtNG5sRy1tb0hHMnotbzBMYTRHbXZBMTlwcFRCSmw1ZDV2MTZSdzBzaDBkTktUTThFZ3RaVl9OUFZPV3hnWWd2SjRZZng3NGdFS3Q1SEFBZlFmcUwxMUl4Uk5wLURMeUxjYVZrcHJST05BcDl0MUNVbjRWVQ?oc=5",
+      "source": "Bloomberg via Google",
+      "source_domain": "news.google.com",
+      "region": "intl",
+      "category": "ai",
+      "published_iso": "2026-05-15T15:50:51+00:00",
+      "published_ts": 1778860251,
+      "has_hindi": false,
+      "priority": 8,
+      "keywords": [
+        "apple",
+        "openai",
+        "alliance",
+        "frays",
+        "bloomberg"
+      ],
+      "anchors": [
+        "alliance",
+        "apple",
+        "bloomberg",
+        "frays",
+        "openai"
+      ],
+      "related_sources": [
+        {
+          "name": "TechCrunch",
+          "domain": "techcrunch.com",
+          "link": "https://techcrunch.com/2026/05/14/openai-is-reportedly-preparing-legal-action-against-apple-it-wouldnt-be-the-first-partner-to-feel-burned/"
+        }
+      ]
     },
     {
       "id": "b0a6d0057bb5",
@@ -10038,38 +10130,6 @@
       ]
     },
     {
-      "id": "559e63b0ff16",
-      "title": "In 1933, a teacher spotted 'weird' wooden stakes in a lake that woke a 2,700-year-old sunken fortress - The Times of India",
-      "title_hindi": null,
-      "summary": "In 1933, a teacher spotted 'weird' wooden stakes in a lake that woke a 2,700-year-old sunken fortress The Times of India",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPZTFhSFB1RXl1cnpGdTNXNzdmRTYwMFNxVFZzSVZtQjFMdGFJT3dNbmh4alpLSkFsQTYtRVBzMmNxa2w2eGJvZTdURjVjSGN4bHhubW9uYzBqdTdUXzBhczlNTnBUaGtWdHR1azltcjNVNG1HemMyd2tuV1lZdVlUNWJ0NmZHQXJiOVRJWDRVOS11NEhfLXdWeHl6U2dVRHl5amlmbk01bzJ1cHVpajBGZGdhRkxzQTdTWGs5VWZwejhLV2xTRC0zMEhwUDRLVS00c1hMTmxVTm01OC1lUkJKYkg4T3paNW1OUHNVcm94LVd5Sm9vRFFZa0oxUdIBgAJBVV95cUxQV3RsbW5JY1JiZldrNUdKX0R6X25BWkJEYkFWQXBxUHQxVEljbkI1ZmU5M0ExRUplV1RZeVZsUHRLdzVwSm5RRVV3TGthS0hWbUJGVnl2cEMyY2JqUmJNWDgwa0t4SG1fck0weUg4ZFd2bnQ3bjRmRTZZSVpxVFJxX0dTWUp1SzhRcGRVSTZrNTdjR0tIcVNCNVEtMzdDRWY4UldVaGk1TnVYZXJidV82NXdtZFVqaTNaYmFPd3h3RDJmYXZFLTc4aFlrOVh2bTFweGRZd2pnRm9KV09TU0lhSWltT1RKcUhaV0V1XzY0OGtyMW5tLTktT0dmekctMGdf?oc=5",
-      "source": "BBC Odd News (Google)",
-      "source_domain": "news.google.com",
-      "region": "intl",
-      "category": "education",
-      "published_iso": "2026-05-16T09:50:00+00:00",
-      "published_ts": 1778925000,
-      "has_hindi": false,
-      "priority": 6,
-      "keywords": [
-        "teacher",
-        "spotted",
-        "weird",
-        "wooden",
-        "stakes",
-        "lake",
-        "woke",
-        "sunken"
-      ],
-      "anchors": [
-        "1933",
-        "700",
-        "india",
-        "times"
-      ],
-      "related_sources": []
-    },
-    {
       "id": "c79477b08bb4",
       "title": "Fourteen illegal immigrants prevented from entering India: Assam CM Himanta Biswa Sarma",
       "title_hindi": null,
@@ -10376,38 +10436,6 @@
       "related_sources": []
     },
     {
-      "id": "26818f50ddd2",
-      "title": "Why Centre denied FCRA renewal to Oxfam India: Key allegations explained",
-      "title_hindi": null,
-      "summary": "",
-      "link": "https://indianexpress.com/article/india/oxfam-india-activities-are-against-countrys-economic-interest-mha-tells-high-court-10691961/",
-      "source": "Indian Express India",
-      "source_domain": "indianexpress.com",
-      "region": "india",
-      "category": "india",
-      "published_iso": "2026-05-15T23:52:46+00:00",
-      "published_ts": 1778889166,
-      "has_hindi": false,
-      "priority": 6,
-      "keywords": [
-        "centre",
-        "denied",
-        "fcra",
-        "renewal",
-        "oxfam",
-        "india",
-        "allegations",
-        "explained"
-      ],
-      "anchors": [
-        "centre",
-        "fcra",
-        "india",
-        "oxfam"
-      ],
-      "related_sources": []
-    },
-    {
       "id": "7d2f0fd20eb7",
       "title": "India can collaborate with us to protect its underwater infra: Top Netherlands Navy officer",
       "title_hindi": null,
@@ -10624,37 +10652,6 @@
       ],
       "anchors": [
         "india"
-      ],
-      "related_sources": []
-    },
-    {
-      "id": "fa7ef24acaeb",
-      "title": "Did Britain influence Kashmir’s decision to join India? A new book examines the role of key players",
-      "title_hindi": null,
-      "summary": "An excerpt from ‘The Origins of a Dispute, Kashmir 1947: Why Sheikh Abdullah Chose India’, by Prem Shankar Jha.",
-      "link": "https://scroll.in/article/1092498/did-britain-influence-kashmirs-decision-to-join-india-a-new-book-examines-the-role-of-key-players?utm_source=rss&utm_medium=public",
-      "source": "Scroll.in",
-      "source_domain": "scroll.in",
-      "region": "india",
-      "category": "education",
-      "published_iso": "2026-05-15T03:00:00+00:00",
-      "published_ts": 1778814000,
-      "has_hindi": false,
-      "priority": 6,
-      "keywords": [
-        "kashmir",
-        "india",
-        "britain",
-        "influence",
-        "decision",
-        "join",
-        "book",
-        "examines"
-      ],
-      "anchors": [
-        "britain",
-        "india",
-        "kashmir"
       ],
       "related_sources": []
     },
@@ -11324,6 +11321,36 @@
       "related_sources": []
     },
     {
+      "id": "c441ee90b97f",
+      "title": "Even Trump Is Trapped by Gas Prices - Bloomberg.com",
+      "title_hindi": null,
+      "summary": "Even Trump Is Trapped by Gas Prices Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQzVZdEdYQnE5bzRaUEFhZ005ejh3N2tBZVQ1RHZhdkJDdWpiX0w0akpYZzB6dzJQdGJSU3Z5VDNMREVVTHJCZGRjcjBveVRKSFhJcjFlMml3REEtNXJzYktFVmQ3OWxWcE94V0g4RjdiTW56elVLcllwMFU5UjRLTVZ4RXVCSmhXUDRKMlFuRE9heWV2QlZ3QVZPODJDZFpLdThJZ3hxaVJLblRQLWRWZVNUNXlRc1MwMzJJSzJIQTA?oc=5",
+      "source": "Bloomberg via Google",
+      "source_domain": "news.google.com",
+      "region": "intl",
+      "category": "politics",
+      "published_iso": "2026-05-16T08:00:01+00:00",
+      "published_ts": 1778918401,
+      "has_hindi": false,
+      "priority": 5,
+      "keywords": [
+        "even",
+        "trump",
+        "trapped",
+        "prices",
+        "bloomberg"
+      ],
+      "anchors": [
+        "bloomberg",
+        "even",
+        "prices",
+        "trapped",
+        "trump"
+      ],
+      "related_sources": []
+    },
+    {
       "id": "67345a5f45db",
       "title": "Rare plant makes comeback from brink of extinction",
       "title_hindi": null,
@@ -11628,40 +11655,6 @@
         "200",
         "boeing",
         "china",
-        "trump"
-      ],
-      "related_sources": []
-    },
-    {
-      "id": "c85208c4b26a",
-      "title": "Trump Chats With Japan’s Takaichi on Alliance After Xi Meeting - Bloomberg.com",
-      "title_hindi": null,
-      "summary": "Trump Chats With Japan’s Takaichi on Alliance After Xi Meeting Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYjFpcWFRVUVmNGczOEJjVlE5MGtfS0E3ZEhFcXhOUWYyb2ZfY1JuVGtpSXBIMldEcGJqYmdFYjktZmoyT3lwOFZWckM0bExsbFVXX0ppRkgzdUd4ZlNoYUtpcnJ4SmFUUTlIcGhyRXRIS1JsOHZYN0JSby1IUEFZTVRCdm5PYm5vT1lVMXVsX2czTWdnU2trR2pWYk1MSWF1aHJILWpqXy1nRTZnU1ktZnQ1aw?oc=5",
-      "source": "Bloomberg via Google",
-      "source_domain": "news.google.com",
-      "region": "intl",
-      "category": "politics",
-      "published_iso": "2026-05-16T00:36:00+00:00",
-      "published_ts": 1778891760,
-      "has_hindi": false,
-      "priority": 5,
-      "keywords": [
-        "trump",
-        "chats",
-        "japan",
-        "takaichi",
-        "alliance",
-        "meeting",
-        "bloomberg"
-      ],
-      "anchors": [
-        "alliance",
-        "bloomberg",
-        "chats",
-        "japan",
-        "meeting",
-        "takaichi",
         "trump"
       ],
       "related_sources": []
@@ -12319,6 +12312,37 @@
       "related_sources": []
     },
     {
+      "id": "c2e4469ac533",
+      "title": "New York Times defends journalist after Israel threatens to sue",
+      "title_hindi": null,
+      "summary": "Israel's prime minister says he has ordered legal action over an article which alleged Israeli security officials raped Palestinian detainees.",
+      "link": "https://www.bbc.com/news/articles/c9wedpk155jo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "source_domain": "bbc.com",
+      "region": "intl",
+      "category": "politics",
+      "published_iso": "2026-05-15T16:30:31+00:00",
+      "published_ts": 1778862631,
+      "has_hindi": false,
+      "priority": 5,
+      "keywords": [
+        "israel",
+        "york",
+        "times",
+        "defends",
+        "journalist",
+        "threatens",
+        "prime",
+        "minister"
+      ],
+      "anchors": [
+        "israel",
+        "times",
+        "york"
+      ],
+      "related_sources": []
+    },
+    {
       "id": "9287793a59b6",
       "title": "Power prices are up 76% on America’s biggest grid, and a watchdog is pointing fingers",
       "title_hindi": null,
@@ -12498,37 +12522,6 @@
       ],
       "anchors": [
         "congress"
-      ],
-      "related_sources": []
-    },
-    {
-      "id": "8ab9ce09f0c7",
-      "title": "Election denial is a fault line in Republican primary for Georgia secretary of state - AP News",
-      "title_hindi": null,
-      "summary": "Election denial is a fault line in Republican primary for Georgia secretary of state AP News",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOblBuM2xURVF0MGtmTVFxN1pCdVJYSUk1RWM5c2ZKWVJaR1M2VllkWG03ZFBlU0NmdFVnRklNd0pfQzR4T1NlUVlXYkFJS1lJY3J1VkxxNVJuWVRaSmxxeWl6bDliZHRuYkVuU2R2ckF3MXFwQUtadjE4bzVRUVJGTkVvN1d5ajY2SkRjU0NVUQ?oc=5",
-      "source": "AP Top News",
-      "source_domain": "news.google.com",
-      "region": "intl",
-      "category": "politics",
-      "published_iso": "2026-05-15T14:19:10+00:00",
-      "published_ts": 1778854750,
-      "has_hindi": false,
-      "priority": 5,
-      "keywords": [
-        "election",
-        "denial",
-        "fault",
-        "line",
-        "republican",
-        "primary",
-        "georgia",
-        "secretary"
-      ],
-      "anchors": [
-        "election",
-        "georgia",
-        "republican"
       ],
       "related_sources": []
     },
@@ -13154,36 +13147,6 @@
       "related_sources": []
     },
     {
-      "id": "a93c144fed4e",
-      "title": "OpenAI is reportedly preparing legal action against Apple; it wouldn’t be the first partner to feel burned",
-      "title_hindi": null,
-      "summary": "OpenAI is so frustrated with Apple over a ChatGPT integration that failed to deliver the subscribers and prominence it expected that the company is now actively exploring legal action against the iPhone maker.",
-      "link": "https://techcrunch.com/2026/05/14/openai-is-reportedly-preparing-legal-action-against-apple-it-wouldnt-be-the-first-partner-to-feel-burned/",
-      "source": "TechCrunch",
-      "source_domain": "techcrunch.com",
-      "region": "intl",
-      "category": "ai",
-      "published_iso": "2026-05-14T19:12:03+00:00",
-      "published_ts": 1778785923,
-      "has_hindi": false,
-      "priority": 5,
-      "keywords": [
-        "openai",
-        "legal",
-        "action",
-        "against",
-        "apple",
-        "preparing",
-        "wouldn",
-        "partner"
-      ],
-      "anchors": [
-        "apple",
-        "openai"
-      ],
-      "related_sources": []
-    },
-    {
       "id": "50c43c42bcfd",
       "title": "Mouni Roy and Suraj Nambiar CONFIRM separation after four years of marriage: “We will cherish our friendship”",
       "title_hindi": null,
@@ -13492,6 +13455,40 @@
         "explained",
         "nta",
         "zero"
+      ],
+      "related_sources": []
+    },
+    {
+      "id": "38d9923c461e",
+      "title": "Canada's Mark Carney speaks with Artemis II crew on Earth",
+      "title_hindi": null,
+      "summary": "The prime minister met Canadian astronaut Jeremy Hansen and other crew members in Ottawa.",
+      "link": "https://www.bbc.com/news/videos/c4g7z2j2mr6o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Science",
+      "source_domain": "bbc.com",
+      "region": "intl",
+      "category": "politics",
+      "published_iso": "2026-05-13T17:02:45+00:00",
+      "published_ts": 1778691765,
+      "has_hindi": false,
+      "priority": 5,
+      "keywords": [
+        "crew",
+        "canada",
+        "mark",
+        "carney",
+        "speaks",
+        "artemis",
+        "earth",
+        "prime"
+      ],
+      "anchors": [
+        "artemis",
+        "canada",
+        "carney",
+        "earth",
+        "ii",
+        "mark"
       ],
       "related_sources": []
     }

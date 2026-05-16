@@ -1,0 +1,577 @@
+{
+  "generated_at": "2026-05-16T12:15:35.853754+00:00",
+  "generated_ts": 1778933735,
+  "total": 22,
+  "category_counts": {
+    "war": 1,
+    "markets": 2,
+    "ai": 1,
+    "economy": 1,
+    "environment": 3,
+    "politics": 1,
+    "science": 1,
+    "technology": 2,
+    "health": 1,
+    "business": 1,
+    "sports": 2,
+    "education": 1,
+    "hollywood": 1,
+    "bollywood": 1,
+    "fashion": 1,
+    "quirky": 2
+  },
+  "region_counts": {
+    "intl": 13,
+    "india": 9
+  },
+  "category_order": [
+    "war",
+    "politics",
+    "government",
+    "economy",
+    "markets",
+    "business",
+    "ai",
+    "technology",
+    "science",
+    "health",
+    "environment",
+    "education",
+    "sports",
+    "bollywood",
+    "hollywood",
+    "entertainment",
+    "fashion",
+    "quirky",
+    "world",
+    "india"
+  ],
+  "articles": [
+    {
+      "id": "af75682f7ad1",
+      "title": "Israel and Hamas reach ceasefire deal, hostages to be released in phased plan",
+      "title_hindi": null,
+      "summary": "Negotiators from Egypt and Qatar announced the agreement late Thursday after months of stalled talks. Initial release of 33 hostages is expected within the first phase, alongside a partial Israeli withdrawal from key Gaza corridors.",
+      "link": "https://reuters.com/",
+      "source": "Reuters",
+      "source_domain": "reuters.com",
+      "region": "intl",
+      "category": "war",
+      "published_iso": "2026-05-16T11:15:35.853754+00:00",
+      "published_ts": 1778930135,
+      "has_hindi": false,
+      "priority": 92,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "BBC World",
+          "domain": "bbc.com",
+          "link": "https://www.bbc.com/news/world-12345"
+        },
+        {
+          "name": "Al Jazeera",
+          "domain": "aljazeera.com",
+          "link": "https://www.aljazeera.com/news/example"
+        }
+      ]
+    },
+    {
+      "id": "bbf8f0e92ddb",
+      "title": "Sensex closes above 86,000 for first time as RBI signals dovish stance",
+      "title_hindi": null,
+      "summary": "Benchmark indices ended at record highs after the central bank held the repo rate at 6.25% and hinted at possible easing in Q2. Banking and IT stocks led the rally with the Nifty gaining 1.4%.",
+      "link": "https://moneycontrol.com/",
+      "source": "Moneycontrol",
+      "source_domain": "moneycontrol.com",
+      "region": "india",
+      "category": "markets",
+      "published_iso": "2026-05-16T10:15:35.853754+00:00",
+      "published_ts": 1778926535,
+      "has_hindi": false,
+      "priority": 86,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "Economic Times",
+          "domain": "economictimes.indiatimes.com",
+          "link": "https://economictimes.indiatimes.com/example"
+        },
+        {
+          "name": "Livemint",
+          "domain": "livemint.com",
+          "link": "https://livemint.com/example"
+        }
+      ]
+    },
+    {
+      "id": "15c23aca55ff",
+      "title": "OpenAI unveils GPT-5.5 with breakthrough multi-step reasoning",
+      "title_hindi": null,
+      "summary": "The new model shows substantial improvements on competition math and scientific reasoning benchmarks. OpenAI says GPT-5.5 reduces hallucinations by 40% and ships to ChatGPT Plus and Enterprise users this week.",
+      "link": "https://theverge.com/",
+      "source": "The Verge",
+      "source_domain": "theverge.com",
+      "region": "intl",
+      "category": "ai",
+      "published_iso": "2026-05-16T09:15:35.853754+00:00",
+      "published_ts": 1778922935,
+      "has_hindi": false,
+      "priority": 84,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "TechCrunch",
+          "domain": "techcrunch.com",
+          "link": "https://techcrunch.com/example"
+        },
+        {
+          "name": "Ars Technica",
+          "domain": "arstechnica.com",
+          "link": "https://arstechnica.com/example"
+        },
+        {
+          "name": "MIT Tech Review",
+          "domain": "technologyreview.com",
+          "link": "https://technologyreview.com/example"
+        }
+      ]
+    },
+    {
+      "id": "a7569fe96dc5",
+      "title": "Federal Reserve cuts rates by 25 bps, signals two more cuts in 2026",
+      "title_hindi": null,
+      "summary": "The Federal Open Market Committee lowered the benchmark rate to a 3.75–4.00% range. Chair Powell cited cooling inflation but warned of persistent labour-market softness. Markets rallied on the dovish tilt.",
+      "link": "https://bloomberg.com/",
+      "source": "Bloomberg",
+      "source_domain": "bloomberg.com",
+      "region": "intl",
+      "category": "economy",
+      "published_iso": "2026-05-16T07:15:35.853754+00:00",
+      "published_ts": 1778915735,
+      "has_hindi": false,
+      "priority": 82,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "CNBC",
+          "domain": "cnbc.com",
+          "link": "https://cnbc.com/example"
+        },
+        {
+          "name": "Reuters",
+          "domain": "reuters.com",
+          "link": "https://reuters.com/example"
+        }
+      ]
+    },
+    {
+      "id": "535b54a4240e",
+      "title": "Pakistan floods displace over 2 million as monsoon damages intensify",
+      "title_hindi": null,
+      "summary": "Sindh and southern Punjab are the worst-hit. The UN has launched an emergency appeal for $400 million. Pakistani authorities say at least 380 people have died in the past week.",
+      "link": "https://bbc.com/",
+      "source": "BBC World",
+      "source_domain": "bbc.com",
+      "region": "intl",
+      "category": "environment",
+      "published_iso": "2026-05-16T06:15:35.853754+00:00",
+      "published_ts": 1778912135,
+      "has_hindi": false,
+      "priority": 80,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "Al Jazeera",
+          "domain": "aljazeera.com",
+          "link": "https://aljazeera.com/example"
+        }
+      ]
+    },
+    {
+      "id": "d4707810bd6e",
+      "title": "PM Modi inaugurates ₹1.2 lakh crore Mumbai-Ahmedabad bullet train corridor",
+      "title_hindi": "पीएम मोदी ने मुंबई-अहमदाबाद बुलेट ट्रेन का उद्घाटन किया",
+      "summary": "The 508-km high-speed rail link, India's first, will cut travel time between the two cities to about two hours. Commercial operations are slated to begin in phases starting next year.",
+      "link": "https://ndtv.com/",
+      "source": "NDTV",
+      "source_domain": "ndtv.com",
+      "region": "india",
+      "category": "politics",
+      "published_iso": "2026-05-16T08:15:35.853754+00:00",
+      "published_ts": 1778919335,
+      "has_hindi": true,
+      "priority": 78,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "Times of India",
+          "domain": "timesofindia.indiatimes.com",
+          "link": "https://timesofindia.indiatimes.com/example"
+        },
+        {
+          "name": "Hindustan Times",
+          "domain": "hindustantimes.com",
+          "link": "https://hindustantimes.com/example"
+        }
+      ]
+    },
+    {
+      "id": "13f6b892e9f2",
+      "title": "UN climate summit in Brasília ends with new fossil-fuel transition pact",
+      "title_hindi": null,
+      "summary": "Delegates from 195 countries agreed to a non-binding roadmap accelerating the phase-down of unabated fossil fuels by 2035. Climate activists called the language watered-down but welcomed the financing pledges.",
+      "link": "https://france24.com/",
+      "source": "France 24",
+      "source_domain": "france24.com",
+      "region": "intl",
+      "category": "environment",
+      "published_iso": "2026-05-16T02:15:35.853754+00:00",
+      "published_ts": 1778897735,
+      "has_hindi": false,
+      "priority": 78,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "Deutsche Welle",
+          "domain": "dw.com",
+          "link": "https://dw.com/example"
+        },
+        {
+          "name": "BBC World",
+          "domain": "bbc.com",
+          "link": "https://bbc.com/example"
+        }
+      ]
+    },
+    {
+      "id": "96ed5b208d77",
+      "title": "ISRO successfully launches Chandrayaan-4 lunar sample return mission",
+      "title_hindi": null,
+      "summary": "The spacecraft lifted off from Sriharikota at 5:42 IST aboard the LVM3 rocket. The mission will return surface samples from the lunar south pole region — a first for any space agency since Chang'e 5.",
+      "link": "https://thehindu.com/",
+      "source": "The Hindu",
+      "source_domain": "thehindu.com",
+      "region": "india",
+      "category": "science",
+      "published_iso": "2026-05-16T05:15:35.853754+00:00",
+      "published_ts": 1778908535,
+      "has_hindi": false,
+      "priority": 76,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "Indian Express",
+          "domain": "indianexpress.com",
+          "link": "https://indianexpress.com/example"
+        },
+        {
+          "name": "NDTV",
+          "domain": "ndtv.com",
+          "link": "https://ndtv.com/example"
+        }
+      ]
+    },
+    {
+      "id": "a7d4387ffa6e",
+      "title": "Cybersecurity: Major data breach hits Indian telecom, 80M users affected",
+      "title_hindi": null,
+      "summary": "An anonymous threat actor claims to have leaked subscriber records including names, addresses and Aadhaar-linked KYC fragments. The telecom is investigating but has not confirmed the scope.",
+      "link": "https://indianexpress.com/",
+      "source": "Indian Express",
+      "source_domain": "indianexpress.com",
+      "region": "india",
+      "category": "technology",
+      "published_iso": "2026-05-15T06:15:35.853754+00:00",
+      "published_ts": 1778825735,
+      "has_hindi": false,
+      "priority": 74,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "NDTV",
+          "domain": "ndtv.com",
+          "link": "https://ndtv.com/example"
+        }
+      ]
+    },
+    {
+      "id": "f973aec2e22b",
+      "title": "New AI-designed antibiotic shows promise against drug-resistant TB",
+      "title_hindi": null,
+      "summary": "Researchers at MIT and Hyderabad's CSIR-CCMB published results in Nature showing the compound is effective against multi-drug-resistant tuberculosis strains in animal trials. Human trials are expected next year.",
+      "link": "https://technologyreview.com/",
+      "source": "MIT Tech Review",
+      "source_domain": "technologyreview.com",
+      "region": "intl",
+      "category": "health",
+      "published_iso": "2026-05-15T22:15:35.853754+00:00",
+      "published_ts": 1778883335,
+      "has_hindi": false,
+      "priority": 72,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "The Hindu",
+          "domain": "thehindu.com",
+          "link": "https://thehindu.com/example"
+        }
+      ]
+    },
+    {
+      "id": "8b69cecb1c64",
+      "title": "Apple unveils foldable iPhone with 7.8-inch interior display",
+      "title_hindi": null,
+      "summary": "At its annual hardware event, Apple revealed the long-rumoured foldable iPhone, branded 'iPhone Fold'. Starting at $2,299 in the US, ₹2,29,900 in India, with shipments beginning next month.",
+      "link": "https://techcrunch.com/",
+      "source": "TechCrunch",
+      "source_domain": "techcrunch.com",
+      "region": "intl",
+      "category": "technology",
+      "published_iso": "2026-05-16T04:15:35.853754+00:00",
+      "published_ts": 1778904935,
+      "has_hindi": false,
+      "priority": 70,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "The Verge",
+          "domain": "theverge.com",
+          "link": "https://theverge.com/example"
+        },
+        {
+          "name": "BBC Tech",
+          "domain": "bbc.com",
+          "link": "https://bbc.com/example"
+        }
+      ]
+    },
+    {
+      "id": "854397be2a5e",
+      "title": "Adani Group announces $50 billion green energy push by 2030",
+      "title_hindi": null,
+      "summary": "The conglomerate said it will scale solar and green hydrogen capacity dramatically, with most of the investment going into Gujarat and Rajasthan plants. Shares of Adani Green rose 4% on the news.",
+      "link": "https://business-standard.com/",
+      "source": "Business Standard",
+      "source_domain": "business-standard.com",
+      "region": "india",
+      "category": "business",
+      "published_iso": "2026-05-15T14:15:35.853754+00:00",
+      "published_ts": 1778854535,
+      "has_hindi": false,
+      "priority": 68,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "Moneycontrol",
+          "domain": "moneycontrol.com",
+          "link": "https://moneycontrol.com/example"
+        }
+      ]
+    },
+    {
+      "id": "07a68f13300e",
+      "title": "Wimbledon 2026: Alcaraz wins fourth consecutive title in five-set thriller",
+      "title_hindi": null,
+      "summary": "Carlos Alcaraz defeated Jannik Sinner 6-4, 5-7, 6-2, 4-6, 7-5 in a four-hour final. The win cements his place among the modern greats and earns him a record-tying fourth straight grass-court Slam.",
+      "link": "https://bbc.com/",
+      "source": "BBC Sport",
+      "source_domain": "bbc.com",
+      "region": "intl",
+      "category": "sports",
+      "published_iso": "2026-05-15T10:15:35.853754+00:00",
+      "published_ts": 1778840135,
+      "has_hindi": false,
+      "priority": 64,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "Sky News",
+          "domain": "skynews.com",
+          "link": "https://skynews.com/example"
+        }
+      ]
+    },
+    {
+      "id": "eb3e18a5860c",
+      "title": "India beat Australia by 6 wickets in T20I series decider",
+      "title_hindi": null,
+      "summary": "Chasing 198 at the MCG, India coasted home with eight balls to spare. Suryakumar Yadav scored an unbeaten 84 off 47 balls and was named player of the match and series.",
+      "link": "https://sports.ndtv.com/",
+      "source": "NDTV Sports",
+      "source_domain": "sports.ndtv.com",
+      "region": "india",
+      "category": "sports",
+      "published_iso": "2026-05-16T03:15:35.853754+00:00",
+      "published_ts": 1778901335,
+      "has_hindi": false,
+      "priority": 60,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": []
+    },
+    {
+      "id": "f7726ec5d946",
+      "title": "Bitcoin breaks $130,000 amid spot-ETF inflows surge",
+      "title_hindi": null,
+      "summary": "The cryptocurrency hit a fresh all-time high as institutional inflows topped $2 billion in a single week. Analysts cite supply-tightening from the recent halving as a continuing driver.",
+      "link": "https://cnbc.com/",
+      "source": "CNBC",
+      "source_domain": "cnbc.com",
+      "region": "intl",
+      "category": "markets",
+      "published_iso": "2026-05-15T00:15:35.853754+00:00",
+      "published_ts": 1778804135,
+      "has_hindi": false,
+      "priority": 60,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": []
+    },
+    {
+      "id": "8f38c4335397",
+      "title": "CBSE announces revamped board exam pattern from 2027",
+      "title_hindi": null,
+      "summary": "The new pattern will include two exam attempts per academic year and a competency-based question structure. Education Minister said the reforms aim to reduce exam stress and align with NEP 2020.",
+      "link": "https://thehindu.com/",
+      "source": "The Hindu Education",
+      "source_domain": "thehindu.com",
+      "region": "india",
+      "category": "education",
+      "published_iso": "2026-05-15T21:15:35.853754+00:00",
+      "published_ts": 1778879735,
+      "has_hindi": false,
+      "priority": 58,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": [
+        {
+          "name": "Indian Express",
+          "domain": "indianexpress.com",
+          "link": "https://indianexpress.com/example"
+        }
+      ]
+    },
+    {
+      "id": "fda5fe9c3ac2",
+      "title": "Tokyo unveils world's first carbon-negative office tower",
+      "title_hindi": null,
+      "summary": "The 52-storey structure uses engineered timber and on-site algae bioreactors. The Japanese government says the design could become a template for new commercial construction nationwide.",
+      "link": "https://nhk.or.jp/",
+      "source": "NHK World",
+      "source_domain": "nhk.or.jp",
+      "region": "intl",
+      "category": "environment",
+      "published_iso": "2026-05-14T10:15:35.853754+00:00",
+      "published_ts": 1778753735,
+      "has_hindi": false,
+      "priority": 48,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": []
+    },
+    {
+      "id": "db8158dfca3a",
+      "title": "Hollywood: 'Dune: Messiah' breaks $300m global opening weekend",
+      "title_hindi": null,
+      "summary": "Denis Villeneuve's third Dune film opened to record numbers, with strong showings in IMAX and Dolby. Critics are praising the film as 'visually overwhelming' while some flag pacing issues.",
+      "link": "https://variety.com/",
+      "source": "Variety",
+      "source_domain": "variety.com",
+      "region": "intl",
+      "category": "hollywood",
+      "published_iso": "2026-05-16T00:15:35.853754+00:00",
+      "published_ts": 1778890535,
+      "has_hindi": false,
+      "priority": 42,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": []
+    },
+    {
+      "id": "f67a46b6c4fa",
+      "title": "Bollywood: Shah Rukh Khan's 'King' release date pushed to Diwali 2026",
+      "title_hindi": null,
+      "summary": "Producers confirmed the schedule change citing extended post-production. The film, directed by Siddharth Anand, also stars Suhana Khan in her first big-screen lead role.",
+      "link": "https://bollywoodhungama.com/",
+      "source": "Bollywood Hungama",
+      "source_domain": "bollywoodhungama.com",
+      "region": "india",
+      "category": "bollywood",
+      "published_iso": "2026-05-16T01:15:35.853754+00:00",
+      "published_ts": 1778894135,
+      "has_hindi": false,
+      "priority": 40,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": []
+    },
+    {
+      "id": "d74043d710c9",
+      "title": "German fashion house Hugo Boss appoints new creative director",
+      "title_hindi": null,
+      "summary": "The Stuttgart-based brand named former Balenciaga designer Léa Martin as creative head. The appointment is seen as part of Hugo Boss's push toward a more avant-garde aesthetic.",
+      "link": "https://dw.com/",
+      "source": "Deutsche Welle",
+      "source_domain": "dw.com",
+      "region": "intl",
+      "category": "fashion",
+      "published_iso": "2026-05-15T18:15:35.853754+00:00",
+      "published_ts": 1778868935,
+      "has_hindi": false,
+      "priority": 35,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": []
+    },
+    {
+      "id": "3a0565574447",
+      "title": "Octopus appears to plan ahead, new study suggests",
+      "title_hindi": null,
+      "summary": "Researchers at the University of Naples observed octopuses gathering tools for future use — behaviour previously seen only in primates and corvids. The findings, published in Current Biology, reopen debates about cephalopod cognition.",
+      "link": "https://bbc.com/",
+      "source": "BBC Science",
+      "source_domain": "bbc.com",
+      "region": "intl",
+      "category": "quirky",
+      "published_iso": "2026-05-15T16:15:35.853754+00:00",
+      "published_ts": 1778861735,
+      "has_hindi": false,
+      "priority": 30,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": []
+    },
+    {
+      "id": "45a8f7c0c921",
+      "title": "Goa man wins ₹15 crore lottery, says he'll use it to open a free school",
+      "title_hindi": null,
+      "summary": "Local resident Manuel D'Souza, 54, said the win 'won't change my house' but will fund a free school for fishermen's children near Panjim. The story has gone viral on Indian social media.",
+      "link": "https://ndtv.com/",
+      "source": "NDTV",
+      "source_domain": "ndtv.com",
+      "region": "india",
+      "category": "quirky",
+      "published_iso": "2026-05-13T12:15:35.853754+00:00",
+      "published_ts": 1778674535,
+      "has_hindi": false,
+      "priority": 28,
+      "keywords": [],
+      "anchors": [],
+      "related_sources": []
+    }
+  ],
+  "is_sample": true
+}

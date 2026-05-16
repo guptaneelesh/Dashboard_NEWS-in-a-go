@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fafafa">
+<title>Daily Brief — Global &amp; India News Dashboard</title>
+<meta name="description" content="A curated, deduplicated digest of global and Indian news, refreshed every 24 hours from open sources.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ----------------------------------------------------------------------
+     Apple-News-inspired: light, generous space, serif headlines, restrained
+     accents. The only "color" comes from a few semantic dots.
+     ---------------------------------------------------------------------- */
+  :root {
+    --bg:        #fbfbfa;
+    --surface:  #ffffff;
+    --ink:      #111111;
+    --ink-2:    #3a3a3a;
+    --ink-3:    #6b6b6b;
+    --ink-4:    #a5a5a5;
+    --rule:     #e9e7e2;
+    --rule-2:   #f0eeea;
+    --accent:   #c8102e;   /* a single editorial red, used very sparingly */
+    --accent-soft: #fde8eb;
+    --pill-bg:  #f3f1ec;
+    --pill-hover:#ebe8e1;
+    --shadow:   0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.04);
+    --radius:   14px;
+    --radius-s: 8px;
+    --serif:    'Fraunces', 'Charter', 'Iowan Old Style', 'Georgia', serif;
+    --sans:     'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --hindi:    'Noto Sans Devanagari', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body { font-family: var(--sans); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ---------- Top masthead ---------- */
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    background: var(--bg);
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    background: rgba(251,251,250,.85);
+  }
+  .masthead-inner {
+    max-width: 1180px; margin: 0 auto;
+    padding: 18px 28px 14px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand {
+    display: flex; align-items: baseline; gap: 12px; min-width: 0;
+  }
+  .brand-title {
+    font-family: var(--serif); font-weight: 700; font-size: 30px;
+    letter-spacing: -0.02em; line-height: 1; color: var(--ink);
+  }
+  .brand-sub {
+    font-size: 12px; color: var(--ink-3); letter-spacing: .08em; text-transform: uppercase;
+    font-weight: 500;
+  }
+  .meta-line {
+    font-size: 12px; color: var(--ink-3); white-space: nowrap;
+  }
+  .meta-line strong { color: var(--ink-2); font-weight: 600; }
+  .sample-banner {
+    max-width: 1180px; margin: 0 auto; padding: 8px 28px;
+    color: #8a5a00; background: #fff6e0; border-bottom: 1px solid #f1e3b8;
+    font-size: 13px;
+  }
+
+  /* ---------- Filter bar ---------- */
+  .controls {
+    max-width: 1180px; margin: 0 auto;
+    padding: 18px 28px 4px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
+  }
+  .toggle-region {
+    display: inline-flex; padding: 3px; background: var(--pill-bg); border-radius: 999px;
+  }
+  .toggle-region button {
+    border: none; background: transparent; padding: 8px 18px;
+    font: 500 13px/1 var(--sans); color: var(--ink-2);
+    border-radius: 999px; cursor: pointer; transition: all .18s ease;
+  }
+  .toggle-region button[aria-pressed="true"] {
+    background: var(--ink); color: #fff;
+  }
+  select, .search input {
+    appearance: none; -webkit-appearance: none;
+    background: var(--pill-bg); border: 1px solid transparent;
+    border-radius: 999px; padding: 9px 16px;
+    font: 500 13px/1 var(--sans); color: var(--ink);
+    cursor: pointer; transition: all .15s ease;
+  }
+  select:hover, .search input:hover { background: var(--pill-hover); }
+  select:focus, .search input:focus { outline: none; border-color: var(--ink-3); background: #fff; }
+  select { padding-right: 32px; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none'><path d='M1 1.5l5 5 5-5' stroke='%23333' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>"); background-repeat: no-repeat; background-position: right 12px center; background-size: 10px; }
+  .search { position: relative; flex: 1 1 220px; max-width: 320px; }
+  .search input { width: 100%; cursor: text; }
+  .search::before {
+    content: ""; position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    width: 14px; height: 14px;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'><circle cx='7' cy='7' r='5' stroke='%23888' stroke-width='1.6'/><path d='M11 11l3 3' stroke='%23888' stroke-width='1.6' stroke-linecap='round'/></svg>") no-repeat center;
+  }
+  .search input { padding-left: 36px; }
+  .filter-summary {
+    flex-basis: 100%; font-size: 13px; color: var(--ink-3); padding-top: 4px;
+  }
+  .filter-summary strong { color: var(--ink-2); font-weight: 600; }
+  .filter-summary .reset {
+    color: var(--accent); cursor: pointer; margin-left: 10px; font-weight: 500;
+  }
+  .filter-summary .reset:hover { text-decoration: underline; }
+
+  /* ---------- Layout ---------- */
+  main { max-width: 1180px; margin: 0 auto; padding: 16px 28px 80px; }
+
+  /* Lead story */
+  .lead {
+    padding: 22px 0 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .lead .eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .lead-headline {
+    font-family: var(--serif); font-weight: 700; font-size: clamp(30px, 4.4vw, 52px);
+    line-height: 1.05; letter-spacing: -0.022em; color: var(--ink);
+    margin: 4px 0 16px; display: block;
+  }
+  .lead-headline:hover { color: var(--accent); }
+  .lead-summary {
+    font-size: 18px; line-height: 1.55; color: var(--ink-2); max-width: 760px;
+    margin-bottom: 18px;
+  }
+  .lead-meta {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px;
+    font-size: 13px; color: var(--ink-3);
+  }
+  .lead-meta a.source-link { color: var(--ink-2); border-bottom: 1px solid var(--ink-4); }
+  .lead-meta a.source-link:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* Article cards */
+  .grid {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+  }
+  @media (max-width: 760px) {
+    .grid { grid-template-columns: 1fr; }
+    .masthead-inner { padding: 14px 18px 12px; flex-wrap: wrap; }
+    .controls { padding: 14px 18px 4px; gap: 10px; }
+    main { padding: 12px 18px 60px; }
+    .brand-title { font-size: 24px; }
+  }
+  .card {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
+    cursor: pointer;
+    transition: transform .18s ease;
+  }
+  .grid .card:nth-child(odd) { padding-right: 28px; border-right: 1px solid var(--rule); }
+  .grid .card:nth-child(even) { padding-left: 28px; }
+  @media (max-width: 760px) {
+    .grid .card:nth-child(odd) { padding-right: 0; border-right: none; }
+    .grid .card:nth-child(even) { padding-left: 0; }
+  }
+  .card:hover { transform: translateY(-1px); }
+  .card:hover .card-headline { color: var(--accent); }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font: 600 11px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .eyebrow .cat-dot {
+    display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--ink-4);
+  }
+  .eyebrow .priority-flag {
+    color: var(--accent); font-weight: 700;
+  }
+  .card-headline {
+    font-family: var(--serif); font-weight: 600;
+    font-size: 22px; line-height: 1.18; letter-spacing: -0.012em;
+    color: var(--ink); margin: 10px 0 8px; display: block;
+    transition: color .15s ease;
+  }
+  .card-summary {
+    font-size: 14.5px; line-height: 1.55; color: var(--ink-2);
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-meta {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px;
+    margin-top: 12px; font-size: 12.5px; color: var(--ink-3);
+  }
+  .card-meta a { color: var(--ink-2); border-bottom: 1px dotted var(--ink-4); }
+  .card-meta a:hover { color: var(--accent); border-color: var(--accent); }
+  .also-in {
+    margin-top: 6px; font-size: 12px; color: var(--ink-3);
+  }
+  .also-in span { color: var(--ink-2); }
+
+  /* Hindi rendering: Devanagari needs its own font */
+  .hindi { font-family: var(--hindi); }
+
+  /* Category-specific accent dots (subtle — no rainbow) */
+  .cat-war      .cat-dot, .cat-war      .priority-flag-dot { background: var(--accent); }
+  .cat-politics .cat-dot { background: #4a4a4a; }
+  .cat-markets  .cat-dot { background: #1e7a3c; }
+  .cat-business .cat-dot { background: #1e7a3c; }
+  .cat-economy  .cat-dot { background: #1e7a3c; }
+  .cat-ai       .cat-dot { background: #4b3ea8; }
+  .cat-technology .cat-dot { background: #4b3ea8; }
+  .cat-science  .cat-dot { background: #0c5b8a; }
+  .cat-health   .cat-dot { background: #b04a4a; }
+  .cat-environment .cat-dot { background: #587a3a; }
+  .cat-sports   .cat-dot { background: #c97b00; }
+  .cat-bollywood .cat-dot, .cat-hollywood .cat-dot, .cat-entertainment .cat-dot { background: #a13d7a; }
+  .cat-fashion  .cat-dot { background: #a13d7a; }
+  .cat-quirky   .cat-dot { background: #6b6b6b; }
+  .cat-education .cat-dot { background: #0c5b8a; }
+  .cat-government .cat-dot { background: #4a4a4a; }
+
+  .empty {
+    padding: 72px 0; text-align: center; color: var(--ink-3);
+  }
+  .empty h2 { font-family: var(--serif); font-weight: 600; color: var(--ink-2); margin: 0 0 6px; font-size: 22px; }
+
+  /* Skeleton loader */
+  .skeleton-line {
+    height: 14px; background: linear-gradient(90deg, #ececec 0%, #f7f7f7 50%, #ececec 100%);
+    background-size: 200% 100%; animation: shimmer 1.4s infinite linear;
+    border-radius: 4px; margin: 8px 0;
+  }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+  /* Footer */
+  footer {
+    max-width: 1180px; margin: 0 auto; padding: 36px 28px 64px;
+    border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--ink-3);
+  }
+  footer a { color: var(--ink-2); border-bottom: 1px solid var(--ink-4); }
+  footer p { margin: 6px 0; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-title">Daily Brief</span>
+      <span class="brand-sub">Global &middot; India</span>
+    </div>
+    <div class="meta-line" id="metaLine">Loading…</div>
+  </div>
+  <div id="sampleBanner" class="sample-banner" hidden></div>
+</header>
+
+<div class="controls" role="region" aria-label="Filters">
+  <div class="toggle-region" role="tablist" aria-label="Region">
+    <button data-region="all"   aria-pressed="true">All</button>
+    <button data-region="intl"  aria-pressed="false">International</button>
+    <button data-region="india" aria-pressed="false">India</button>
+  </div>
+
+  <select id="categorySel" aria-label="Category">
+    <option value="all">All categories</option>
+  </select>
+
+  <select id="windowSel" aria-label="Time window">
+    <option value="1">Last 1 hour</option>
+    <option value="2">Last 2 hours</option>
+    <option value="6">Last 6 hours</option>
+    <option value="24" selected>Last 24 hours</option>
+    <option value="168">Last 7 days</option>
+  </select>
+
+  <div class="search">
+    <input id="searchInput" type="search" placeholder="Search headlines…" autocomplete="off">
+  </div>
+
+  <div class="filter-summary" id="filterSummary"></div>
+</div>
+
+<main id="content">
+  <div class="lead">
+    <div class="skeleton-line" style="width: 30%; height: 12px;"></div>
+    <div class="skeleton-line" style="width: 85%; height: 38px; margin-top: 14px;"></div>
+    <div class="skeleton-line" style="width: 70%; height: 38px;"></div>
+    <div class="skeleton-line" style="width: 60%; margin-top: 18px;"></div>
+    <div class="skeleton-line" style="width: 50%;"></div>
+  </div>
+</main>
+
+<footer>
+  <p>Headlines aggregated from publicly available RSS feeds of news organizations including BBC, Reuters, Al Jazeera, NDTV, The Hindu, Times of India, Indian Express, NHK World, Deutsche Welle, France 24, TechCrunch, The Verge, Bloomberg, CNBC, Moneycontrol, Economic Times and others. Each headline links to the original publisher; copyrights remain with the respective owners.</p>
+  <p>Refreshed every 24 hours via a GitHub Actions workflow. Stories are clustered by keyword and named-entity overlap so the same event covered by several outlets appears once, with corroborating sources listed.</p>
+  <p>This dashboard does not host article text — only short summaries that are part of the publishers' own RSS feed. Click any headline to read the full story at the source.</p>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+   Daily Brief — client-side rendering, filtering, search.
+   ------------------------------------------------------------------ */
+
+const state = {
+  data: null,
+  region: 'all',           // all | intl | india
+  category: 'all',
+  windowHours: 24,
+  query: '',
+};
+
+const CAT_LABELS = {
+  war:'War & Conflict', politics:'Politics', government:'Government',
+  economy:'Economy', markets:'Markets', business:'Business',
+  ai:'AI', technology:'Technology', science:'Science',
+  health:'Health', environment:'Environment', education:'Education',
+  sports:'Sports', bollywood:'Bollywood', hollywood:'Hollywood',
+  entertainment:'Entertainment', fashion:'Fashion', quirky:'Offbeat',
+  world:'World', india:'India',
+};
+
+// ---------- Data load ----------
+async function loadData() {
+  try {
+    // Cache-bust on each navigation so users get latest after a refresh
+    const resp = await fetch('data/news.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    state.data = await resp.json();
+    populateCategories();
+    renderMeta();
+    render();
+  } catch (e) {
+    document.getElementById('content').innerHTML =
+      `<div class="empty"><h2>Could not load news</h2>
+       <p>${escapeHtml(String(e))}. The first GitHub Actions run may not have completed yet.</p></div>`;
+  }
+}
+
+function populateCategories() {
+  const sel = document.getElementById('categorySel');
+  const counts = state.data.category_counts || {};
+  const order = state.data.category_order || Object.keys(counts);
+  for (const cat of order) {
+    if (!counts[cat]) continue;
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = `${CAT_LABELS[cat] || cat} (${counts[cat]})`;
+    sel.appendChild(opt);
+  }
+}
+
+function renderMeta() {
+  const ts = state.data.generated_ts * 1000;
+  const ago = humanAgo(ts);
+  const dateStr = new Date(ts).toLocaleString(undefined,
+    { dateStyle: 'medium', timeStyle: 'short' });
+  document.getElementById('metaLine').innerHTML =
+    `<strong>${state.data.total}</strong> stories &middot; updated ${ago} &middot; <span title="${dateStr}">${dateStr}</span>`;
+
+  if (state.data.is_sample) {
+    const b = document.getElementById('sampleBanner');
+    b.hidden = false;
+    b.textContent = '⚠️ Showing sample data. Once your GitHub Actions workflow runs (daily at 02:00 UTC, or manually from the Actions tab), real news will replace this.';
+  }
+}
+
+// ---------- Filter pipeline ----------
+function filtered() {
+  if (!state.data) return [];
+  const now = Date.now() / 1000;
+  const cutoff = now - state.windowHours * 3600;
+  const q = state.query.trim().toLowerCase();
+
+  return state.data.articles.filter(a => {
+    if (state.region !== 'all' && a.region !== state.region) return false;
+    if (state.category !== 'all' && a.category !== state.category) return false;
+    if (a.published_ts < cutoff) return false;
+    if (q) {
+      const hay = (a.title + ' ' + a.summary + ' ' + a.source + ' ' + a.category).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+// ---------- Render ----------
+function render() {
+  const list = filtered();
+  const main = document.getElementById('content');
+  const sum  = document.getElementById('filterSummary');
+
+  // Summary line
+  const parts = [];
+  parts.push(`<strong>${list.length}</strong> ${list.length === 1 ? 'story' : 'stories'}`);
+  if (state.region !== 'all') parts.push(`in <strong>${state.region === 'india' ? 'India' : 'International'}</strong>`);
+  if (state.category !== 'all') parts.push(`tagged <strong>${CAT_LABELS[state.category] || state.category}</strong>`);
+  parts.push(`from the last <strong>${labelWindow(state.windowHours)}</strong>`);
+  if (state.query) parts.push(`matching “<strong>${escapeHtml(state.query)}</strong>”`);
+  const hasAnyFilter = state.region !== 'all' || state.category !== 'all' || state.windowHours !== 24 || state.query;
+  sum.innerHTML = parts.join(' ') + (hasAnyFilter ? ' <span class="reset" id="resetBtn">Reset filters</span>' : '');
+  const reset = document.getElementById('resetBtn');
+  if (reset) reset.onclick = resetFilters;
+
+  if (list.length === 0) {
+    main.innerHTML = `<div class="empty">
+      <h2>No stories match these filters.</h2>
+      <p>Try widening the time window or switching region.</p>
+    </div>`;
+    return;
+  }
+
+  // Lead = highest-priority article in the filtered list
+  const [lead, ...rest] = list;
+  main.innerHTML = renderLead(lead) + (rest.length ? `<div class="grid">${rest.map(renderCard).join('')}</div>` : '');
+}
+
+function renderLead(a) {
+  return `
+    <article class="lead cat-${a.category}">
+      <div class="eyebrow">
+        <span class="cat-dot"></span>
+        <span>${escapeHtml(CAT_LABELS[a.category] || a.category)}</span>
+        ${a.priority >= 80 ? '<span class="priority-flag">• Top story</span>' : ''}
+        ${a.related_sources && a.related_sources.length ? `<span>• Covered by ${a.related_sources.length + 1} outlets</span>` : ''}
+      </div>
+      <a class="lead-headline ${a.has_hindi ? 'hindi' : ''}" href="${escapeAttr(a.link)}" target="_blank" rel="noopener noreferrer">
+        ${escapeHtml(a.title)}
+      </a>
+      <p class="lead-summary">${escapeHtml(a.summary)}</p>
+      <div class="lead-meta">
+        <span>${humanAgo(a.published_ts * 1000)}</span>
+        <span>·</span>
+        <span>Primary source: <a class="source-link" href="${escapeAttr(a.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(a.source)}</a></span>
+        ${renderRelated(a, true)}
+      </div>
+    </article>
+  `;
+}
+
+function renderCard(a) {
+  return `
+    <article class="card cat-${a.category}" onclick="window.open('${escapeAttr(a.link)}', '_blank', 'noopener,noreferrer')">
+      <div class="eyebrow">
+        <span class="cat-dot"></span>
+        <span>${escapeHtml(CAT_LABELS[a.category] || a.category)}</span>
+        ${a.priority >= 80 ? '<span class="priority-flag">• Top</span>' : ''}
+      </div>
+      <a class="card-headline ${a.has_hindi ? 'hindi' : ''}" href="${escapeAttr(a.link)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+        ${escapeHtml(a.title)}
+      </a>
+      <p class="card-summary">${escapeHtml(a.summary || '')}</p>
+      <div class="card-meta">
+        <span>${humanAgo(a.published_ts * 1000)}</span>
+        <span>·</span>
+        <a href="${escapeAttr(a.link)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${escapeHtml(a.source)}</a>
+      </div>
+      ${renderRelated(a, false)}
+    </article>
+  `;
+}
+
+function renderRelated(a, isLead) {
+  if (!a.related_sources || !a.related_sources.length) return '';
+  const links = a.related_sources.slice(0, 4).map(r =>
+    `<a href="${escapeAttr(r.link)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${escapeHtml(r.name)}</a>`
+  ).join(', ');
+  return `<div class="also-in"><span>Also reported by:</span> ${links}${a.related_sources.length > 4 ? ` +${a.related_sources.length - 4} more` : ''}</div>`;
+}
+
+// ---------- Helpers ----------
+function humanAgo(ms) {
+  const s = Math.max(0, (Date.now() - ms) / 1000);
+  if (s < 60) return 'just now';
+  if (s < 3600) return Math.round(s / 60) + ' min ago';
+  if (s < 86400) return Math.round(s / 3600) + ' hr ago';
+  return Math.round(s / 86400) + ' d ago';
+}
+function labelWindow(h) {
+  if (h < 24) return h + ' hour' + (h > 1 ? 's' : '');
+  if (h === 24) return '24 hours';
+  return Math.round(h / 24) + ' days';
+}
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function escapeAttr(s) { return escapeHtml(s); }
+
+function resetFilters() {
+  state.region = 'all';
+  state.category = 'all';
+  state.windowHours = 24;
+  state.query = '';
+  document.querySelectorAll('.toggle-region button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.region === 'all')));
+  document.getElementById('categorySel').value = 'all';
+  document.getElementById('windowSel').value = '24';
+  document.getElementById('searchInput').value = '';
+  render();
+}
+
+// ---------- Event wiring ----------
+document.querySelectorAll('.toggle-region button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    state.region = btn.dataset.region;
+    document.querySelectorAll('.toggle-region button').forEach(b =>
+      b.setAttribute('aria-pressed', String(b === btn)));
+    render();
+  });
+});
+document.getElementById('categorySel').addEventListener('change', e => {
+  state.category = e.target.value; render();
+});
+document.getElementById('windowSel').addEventListener('change', e => {
+  state.windowHours = Number(e.target.value); render();
+});
+document.getElementById('searchInput').addEventListener('input', e => {
+  state.query = e.target.value; render();
+});
+
+loadData();
+</script>
+</body>
+</html>

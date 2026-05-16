@@ -1,0 +1,44 @@
+name: Refresh news feed
+
+on:
+  schedule:
+    # 02:00 UTC daily = 07:30 IST. GitHub may delay scheduled runs by a few minutes
+    # under heavy load — that's fine for a 24-hour cadence.
+    - cron: "0 2 * * *"
+  workflow_dispatch:  # allow manual runs from the Actions tab
+
+permissions:
+  contents: write    # needed for the bot to push news.json back to main
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser==6.0.11 requests==2.32.3
+
+      - name: Run aggregator
+        run: python scripts/aggregate.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "news-bot"
+          git config user.email "[email protected]"
+          git add data/news.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(news): daily refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
